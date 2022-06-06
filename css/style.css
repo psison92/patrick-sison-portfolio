@@ -12,10 +12,12 @@ html {
     margin: 0;
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 25% 15% 20% 15% 25%;
-    grid-template-rows: 10% 50% 25% 15%;
+    grid-template-columns: 25% 10% auto 10% 25%;
+    grid-template-rows: 5% 50% 25% 15%;
     grid-template-areas: 
-    " . nav nav nav .";
+    " . . nav . ."
+    " . . . . ."
+    " . desc desc desc .";
 }
 
 nav {
@@ -36,3 +38,23 @@ nav > div {
 #home-background {
     max-width: fit-content;
 }
+
+div {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: gray;
+    align-items: center;
+    justify-content: flex-start;
+    grid-area: desc;
+}
+
+h1 {
+    margin: 20px auto 0 auto;
+    font-size: 50px;
+}
+
+p {
+    margin-top: 0;
+}
+
