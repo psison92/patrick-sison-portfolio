@@ -47,7 +47,7 @@ nav > div {
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: gray;
+    background-color: rgb(160, 160, 160, 0.7);
     align-items: center;
     justify-content: flex-start;
     grid-area: desc;
@@ -82,3 +82,18 @@ nav > div {
     grid-row-start: 2;
     margin-left: 1rem;
 }
+
+.work {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.work-title {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    text-align: center;
+}
+
