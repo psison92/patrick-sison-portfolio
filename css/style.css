@@ -24,7 +24,6 @@ nav {
     display: flex;
     flex-direction: row;
     height: auto;
-    background-color: aquamarine;
     align-items: center;
     justify-content: flex-start;
     grid-area: nav;
@@ -33,13 +32,18 @@ nav {
 nav > div {
     justify-content: right;
     margin: 0 auto;
+    background-color: transparent;
+    color: whitesmoke
 }
 
-#home-background {
-    max-width: fit-content;
+.background-img {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 }
 
-div {
+.home-overlay {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -49,12 +53,24 @@ div {
     grid-area: desc;
 }
 
-h1 {
+.name {
     margin: 20px auto 0 auto;
-    font-size: 50px;
+    font-size: 4rem;
 }
 
-p {
+.description {
     margin-top: 0;
 }
 
+.about {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 4fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+.avatar {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
