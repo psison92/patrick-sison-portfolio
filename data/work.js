@@ -7,3 +7,7 @@ const projects = [
         deployment: 'https://ttt-patrick-s.netlify.app/'
     }
 ]
+
+export {
+    projects
+}

@@ -76,7 +76,7 @@ html {
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr;
     border-style: solid;
 }
 
@@ -88,6 +88,12 @@ html {
 
 .work-heading {
     font-size: 50px;
+}
+
+#card-container {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
 }
 
 .resume-and-skills {
@@ -106,6 +112,13 @@ html {
 
 .skills-heading {
     font-size: 50px;
+}
+
+.logo-div {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact {
