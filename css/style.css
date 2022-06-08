@@ -8,19 +8,17 @@ html {
     box-sizing: inherit;
 }
 
+
 .home {
     margin: 0;
-    display: grid;
+    
     min-height: 100vh;
-    grid-template-columns: 25% 10% auto 10% 25%;
-    grid-template-rows: 5% 50% 25% 15%;
-    grid-template-areas: 
-    " . . nav . ."
-    " . . . . ."
-    " . desc desc desc .";
+    ;
 }
 
 .navbar-expand{-sm|-md|-lg|-xl|-xxl}
+
+
 
 .background-img {
     background-size: cover;
