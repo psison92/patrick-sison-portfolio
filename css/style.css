@@ -16,7 +16,6 @@ html {
     ;
 }
 
-.navbar-expand{-sm|-md|-lg|-xl|-xxl}
 
 
 
@@ -46,7 +45,7 @@ html {
     margin-top: 0;
 }
 
-.about {
+#about {
     margin: 0;
     display: grid;
     min-height: 100vh;
@@ -109,6 +108,6 @@ html {
 
 .contact-title {
     grid-column-start: 2;
-    grid-row-start 1;
+    grid-row-start: 1;
 }
 
