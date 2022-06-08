@@ -113,3 +113,18 @@ nav > div {
     grid-row-end: 2;
 }
 
+.contact {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    min-width: 90vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    border-style: solid;
+}
+
+.contact-title {
+    grid-column-start: 2;
+    grid-row-start 1;
+}
+
