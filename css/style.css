@@ -20,21 +20,7 @@ html {
     " . desc desc desc .";
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    align-items: center;
-    justify-content: flex-start;
-    grid-area: nav;
-}
-
-nav > div {
-    justify-content: right;
-    margin: 0 auto;
-    background-color: transparent;
-    color: whitesmoke
-}
+.navbar-expand{-sm|-md|-lg|-xl|-xxl}
 
 .background-img {
     background-size: cover;
@@ -47,7 +33,7 @@ nav > div {
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: rgb(160, 160, 160, 0.7);
+    background-color: rgba(81, 97, 137, 0.805);
     align-items: center;
     justify-content: flex-start;
     grid-area: desc;
