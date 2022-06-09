@@ -11,24 +11,28 @@
 </head>
 <body>
     <main>
-        <nav class="navbar sticky-top navbar-light bg-light container-fluid">
-            <div class="container-sm">
-              <a class="navbar-brand mx-auto" id="about-btn" href="#about">About</a>
-              <a class="navbar-brand mx-auto" id="work-btn" href="#work">Work</a>
-              <a class="navbar-brand mx-auto" id="resume-btn" href="#skills">Resume</a>
-              <a class="navbar-brand mx-auto" id="contact-btn" href="#contact">Contact</a>
+        <section class="home background-img container-fluid" style="background-image: url(assets/images/houston-skyline-1.jpg)">
+        <nav class="navbar fixed-top navbar-light bg-trans container-fluid navbar-expand-sm">
+            <div class="container-sm justify-content-center">
+              <a class="navbar-brand mx-5" id="about-btn" href="#about">About</a>
+              <a class="navbar-brand mx-5" id="work-btn" href="#work">Work</a>
+              <a class="navbar-brand mx-5" id="resume-btn" href="#skills">Resume</a>
+              <a class="navbar-brand mx-5" id="contact-btn" href="#contact">Contact</a>
             </div>
           </nav>
-        <section class="home background-img" style="background-image: url(assets/houston-skyline-1.jpg)">
-            <div class="home-overlay">
+            <div class="home-overlay translate-middle">
                 <h1 class="name">Patrick Sison</h1>
                 <p class="description">Software engineer in Houston, TX</p>
                 <button>Connect</button>
             </div>
+        
             </section>
-        <section id="about">
-            <div class="avatar">Avatar</div>
-            <div class="about-me">
+        <section class="about container">
+            <div class="row">
+            <div class="avatar-div col">
+                <img src="./assets/images/avatar-square.jpg" class="w-75" id="avatar" alt="profile-picture">
+            </div>
+            <div class="about-me col">
                 <h2 class="about-me-title">About Me</h2>
                 <p class="bio">I'm a software engineer in Houston, TX
                     with experience in HTML, CSS, and Javascript.
@@ -38,26 +42,26 @@
                     all my coding endeavors.
                 </p>
             </div>
+        </div>
         </section>
-        <section class="work">
+        <section class="work container">
             <div class="work-title">
                 <h2 class="work-heading">Work</h2>
             </div>
-            <div id="card-container">
-                
-            </div>
+            <div class="work-content"id="card-container">
+                </div>
         </section>
-        <section class="resume-and-skills">
+        <section class="resume-and-skills container">
             <div class="skills-title">
                 <h2 class="skills-heading">Skills</h2>
             </div>
             <div class="logo-div">
-                <img src="./assets/js-logo.png" alt="javascript_logo">
-                <img src="./assets/css-logo.png" alt="css_logo">
+                <img src="./assets/images/js-logo.png" alt="javascript_logo">
+                <img src="./assets/images/css-logo.png" alt="css_logo">
             </div>
             <div class="resume"></div>
         </section>
-        <section class="contact">
+        <section class="contact container">
             <h2 class="contact-title">Contact</h2>
         </section>
     </main> 
