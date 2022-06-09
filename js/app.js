@@ -9,6 +9,8 @@ const contactSection = document.querySelector('.contact')
 
 const cardContainer = document.getElementById('card-container')
 
+const navBar = document.querySelector('.navbar')
+
 let projectCard = projects.map(project =>
     `
     <div class="card text-center" style="width: 18rem;">
@@ -17,8 +19,8 @@ let projectCard = projects.map(project =>
             <h5 class="card-title">${project.title}</h5>
             <p class="card-text">${project.description}</p>
             <div>
-                <a href="${project.github}" class="btn btn-primary">Github</a>
-                <a href="${project.deployment}" class="btn btn-secondary">Deployment</a>
+                <a href="${project.github}" target="_blank" class="btn btn-primary">Github</a>
+                <a href="${project.deployment}" target="_blank" class="btn btn-secondary">Deployment</a>
             </div>
         </div>
     </div>
@@ -26,7 +28,7 @@ let projectCard = projects.map(project =>
 ).join('')
 
 cardContainer.innerHTML = projectCard
-console.log(projects)
+
 
 
 aboutBtn.addEventListener('click', function() {
@@ -38,5 +40,7 @@ workBtn.addEventListener('click', function() {
 contactBtn.addEventListener('click', function() {
     contactSection.scrollIntoView({behavior: 'smooth'})
     });
-
-
+window.addEventListener('scroll', function() {
+    const windowPosition = window.scrollY > 0
+    navBar.classList.toggle('scrolling-active', windowPosition)
+})
