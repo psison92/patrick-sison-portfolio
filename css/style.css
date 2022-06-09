@@ -85,23 +85,8 @@ html {
     align-items: center;
 }
 
-.resume-and-skills {
-    min-height: 100vh;
-    padding-top: 100px;
-}
-
-.skills-title {
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-.skills-heading {
-    font-size: 50px;
-}
-
-.logo-div {
-    justify-content: center;
-    align-items: center;
+.built-with {
+    text-align: center;
 }
 
 .contact {

@@ -2,11 +2,9 @@ import { projects } from "../data/work.js"
 
 const aboutBtn = document.getElementById('about-btn')
 const workBtn = document.getElementById('work-btn')
-const resumeBtn = document.getElementById('resume-btn')
 const contactBtn = document.getElementById('contact-btn')
 const aboutSection = document.querySelector('.about')
 const workSection = document.querySelector('.work')
-const resumeSection = document.querySelector('.resume-and-skills')
 const contactSection = document.querySelector('.contact')
 
 const cardContainer = document.getElementById('card-container')
@@ -32,16 +30,13 @@ console.log(projects)
 
 
 aboutBtn.addEventListener('click', function() {
-    aboutSection.scrollIntoView()
+    aboutSection.scrollIntoView({behavior: 'smooth'})
     });
 workBtn.addEventListener('click', function() {
-    workSection.scrollIntoView()
-    });
-resumeBtn.addEventListener('click', function() {
-    resumeSection.scrollIntoView()
+    workSection.scrollIntoView({behavior: 'smooth'})
     });
 contactBtn.addEventListener('click', function() {
-    contactSection.scrollIntoView()
+    contactSection.scrollIntoView({behavior: 'smooth'})
     });
 
 
