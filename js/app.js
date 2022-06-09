@@ -8,10 +8,9 @@ const aboutSection = document.querySelector('.about')
 const workSection = document.querySelector('.work')
 const skillsSection = document.querySelector('.skills')
 const contactSection = document.querySelector('.contact')
-
 const cardContainer = document.getElementById('card-container')
-
 const navBar = document.querySelector('.navbar')
+const mediaQuery = window.matchMedia('(max-width: 768px)')
 
 let projectCard = projects.map(project =>
     `
@@ -46,6 +45,9 @@ contactBtn.addEventListener('click', function() {
     contactSection.scrollIntoView({behavior: 'smooth'})
     });
 window.addEventListener('scroll', function() {
-    const windowPosition = window.scrollY > 0
-    navBar.classList.toggle('scrolling-active', windowPosition)
-})
+    if (!mediaQuery.matches) {
+        const windowPosition = window.scrollY > 0
+        navBar.classList.toggle('scrolling-active', windowPosition)
+    } else return
+    })
+ 
