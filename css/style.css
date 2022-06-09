@@ -8,6 +8,9 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    color: #003153;
+}
 
 .home {
     margin: 0;
@@ -15,13 +18,19 @@ html {
     ;
 }
 
+.navbar-home{
+    height: 4rem
+}
+
 .scrolling-active {
     background-color: #e3f2fd;
     transition: 1000ms;
+    height: 3rem
 }
 
-.scrolling-active .nav{
-    height: 1rem;
+
+.scrolling-active .navbar-brand{
+    
 }
 
 .scrolling-active .nav a.container {
@@ -59,7 +68,7 @@ html {
 
 .about {
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 #avatar {
@@ -78,6 +87,7 @@ html {
 .bio {
     font-size: 1.25rem;
     padding-top: 50px;
+    color: #536872;
 }
 
 .work {
