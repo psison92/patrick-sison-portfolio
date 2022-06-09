@@ -2,9 +2,11 @@ import { projects } from "../data/work.js"
 
 const aboutBtn = document.getElementById('about-btn')
 const workBtn = document.getElementById('work-btn')
+const skillsBtn = document.getElementById('skills-btn')
 const contactBtn = document.getElementById('contact-btn')
 const aboutSection = document.querySelector('.about')
 const workSection = document.querySelector('.work')
+const skillsSection = document.querySelector('.skills')
 const contactSection = document.querySelector('.contact')
 
 const cardContainer = document.getElementById('card-container')
@@ -36,6 +38,9 @@ aboutBtn.addEventListener('click', function() {
     });
 workBtn.addEventListener('click', function() {
     workSection.scrollIntoView({behavior: 'smooth'})
+    });
+skillsBtn.addEventListener('click', function() {
+    skillsSection.scrollIntoView({behavior: 'smooth'})
     });
 contactBtn.addEventListener('click', function() {
     contactSection.scrollIntoView({behavior: 'smooth'})
