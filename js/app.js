@@ -20,9 +20,9 @@ let projectCard = projects.map(project =>
         <div class="card-body">
             <h5 class="card-title">${project.title}</h5>
             <p class="card-text">${project.description}</p>
-            <div>
-                <a href="${project.github}" target="_blank" class="btn btn-primary">Github</a>
-                <a href="${project.deployment}" target="_blank" class="btn btn-secondary">Deployment</a>
+            <div class="justify-content-evenly">
+                <a href="${project.github}" target="_blank" class="btn github-btn">Github</a>
+                <a href="${project.deployment}" target="_blank" class="btn play-btn">Play!</a>
             </div>
         </div>
     </div>
