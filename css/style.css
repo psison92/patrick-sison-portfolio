@@ -122,6 +122,14 @@ html {
     padding-top: 50px;
 }
 
+.icons-list {
+    padding-top: 150px;
+}
+
+.logo-name {
+    text-align: center;
+}
+
 .contact {
     min-height: 100vh;
     padding-top: 100px;
