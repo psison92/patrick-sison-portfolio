@@ -177,6 +177,11 @@ body {
         max-height: 50px;
     }
     
+    .a-container {
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+
     .navbar-brand {
         margin-left: 12px;
         margin-right: 12px; 
