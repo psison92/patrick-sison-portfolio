@@ -10,6 +10,7 @@ html {
 
 body {
     color: #003153;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .home {
@@ -236,7 +237,6 @@ body {
 
     .icons-list {
         flex-flow: wrap;
-        align-items: ;
     }
 
     .skills {
