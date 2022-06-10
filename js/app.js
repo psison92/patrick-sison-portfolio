@@ -1,10 +1,12 @@
 import { projects } from "../data/work.js"
 
+const homeBtn = document.getElementById('home-btn')
 const aboutBtn = document.getElementById('about-btn')
 const workBtn = document.getElementById('work-btn')
 const skillsBtn = document.getElementById('skills-btn')
 const contactBtn = document.getElementById('contact-btn')
 const connectBtn = document.getElementById('connect-btn')
+const homeSection = document.querySelector('.home')
 const aboutSection = document.querySelector('.about')
 const workSection = document.querySelector('.work')
 const skillsSection = document.querySelector('.skills')
@@ -33,6 +35,9 @@ cardContainer.innerHTML = projectCard
 
 
 
+homeBtn.addEventListener('click', function() {
+    homeSection.scrollIntoView({behavior: 'smooth'})
+    });
 aboutBtn.addEventListener('click', function() {
     aboutSection.scrollIntoView({behavior: 'smooth'})
     });
