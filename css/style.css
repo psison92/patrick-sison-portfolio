@@ -30,7 +30,7 @@ body {
 }
 
 .scrolling-active {
-    background-color: #89cff0;
+    background-color: #bcd4e6;
     transition: 1000ms;
     height: 3.5rem
 }
@@ -55,7 +55,7 @@ body {
 	top: 50%;
 	transform: translate(-50%);
 	text-align: center;
-    background-color: rgba(76, 81, 109, 0.7);
+    background-color: rgba(5, 58, 96, 0.688);
     width: 50vw;
     padding-bottom: 30px;
 }

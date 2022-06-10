@@ -4,6 +4,7 @@ const aboutBtn = document.getElementById('about-btn')
 const workBtn = document.getElementById('work-btn')
 const skillsBtn = document.getElementById('skills-btn')
 const contactBtn = document.getElementById('contact-btn')
+const connectBtn = document.getElementById('connect-btn')
 const aboutSection = document.querySelector('.about')
 const workSection = document.querySelector('.work')
 const skillsSection = document.querySelector('.skills')
@@ -42,6 +43,9 @@ skillsBtn.addEventListener('click', function() {
     skillsSection.scrollIntoView({behavior: 'smooth'})
     });
 contactBtn.addEventListener('click', function() {
+    contactSection.scrollIntoView({behavior: 'smooth'})
+    });
+connectBtn.addEventListener('click', function() {
     contactSection.scrollIntoView({behavior: 'smooth'})
     });
 window.addEventListener('scroll', function() {
