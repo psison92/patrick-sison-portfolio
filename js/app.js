@@ -24,7 +24,7 @@ let projectCard = projects.map(project =>
             <p class="card-text">${project.description}</p>
             <div class="justify-content-evenly">
                 <a href="${project.github}" target="_blank" class="btn github-btn">Github</a>
-                <a href="${project.deployment}" target="_blank" class="btn play-btn">Play!</a>
+                <a href="${project.deployment}" target="_blank" class="btn play-btn">App</a>
             </div>
         </div>
     </div>
