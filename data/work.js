@@ -19,6 +19,13 @@ const projects = [
         description: 'Stranger Things themed app where users create and share drink recipes.',
         github: 'https://github.com/psison92/stranger-drinks-front-end',
         deployment: 'https://stranger-drinks.netlify.app/'
+    },
+    {
+        title: 'Tupperwhere',
+        image: '/assets/images/landing.png',
+        description: 'Never forget about your leftovers again!',
+        github: 'https://github.com/psison92/tupperwhere',
+        deployment: 'https://tupperwhere.herokuapp.com/'
     }
 ]
 
